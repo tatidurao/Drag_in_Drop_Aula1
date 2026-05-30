@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Kanban - Arrastar Cards</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Mini Kanban</h1>
+    <p class="subtitle">Crie um card e arraste para a coluna Feito</p>
+
+    <div class="form">
+      <input type="text" id="taskInput" placeholder="Digite uma tarefa...">
+      <button onclick="criarCard()">Criar Card</button>
+    </div>
+
+    <div class="board">
+      <div class="column" id="todo">
+        <h2>📝 A Fazer</h2>
+      </div>
+
+      <div class="column" id="done">
+        <h2>✅ Feito</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
